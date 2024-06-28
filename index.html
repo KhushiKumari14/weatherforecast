@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <i class='bx bxs-map'></i>
+            <input type="text" placeholder="enter city name">
+            <button class='bx bx-search'></button>
+        </div>
+        <p class="day-date">
+            <i class='bx bx-calendar-alt' ></i>
+            <span class="day">Thursday, </span>  
+            <span class="date"> 27</span>
+            <span class="month">May </span>
+            <span class="year">2023</span>
+        </p>
+        <div class="weather">
+            <div class="weather-box">
+                <img src="images/cloud.png" alt="cloudy" class="weather-icon">
+                <p class="temperature">16<span>°C</span></p>
+            
+                <p class="feels-like">Feels like <span class="feels-temp">34°C</span></p>
+                <p class="description">Broken clouds</p>
+                <p class="city">Bokaro, IN</p>
+            </div>
+            <div class="details">
+                <div class="col padHumid">
+                    <i class='bx bx-water'></i>
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p class="text">Humidity</p>
+                    </div>
+                </div>
+                <div class="col padWind">
+                    <i class='bx bx-wind'></i>
+                    <div>
+                        <p class="wind">15km/h</p>
+                        <p class="text">Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="not-found">
+            <img src="images/404.png" alt="error404">
+            <p>Oops! Location not found!</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

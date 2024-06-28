@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://www.noaa.gov/sites/default/files/styles/landscape_width_1275/public/legacy/image/2019/Jun/PHOTO-dark%20and%20stormy%20cloudscape-istock-1125x534-Landscape.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, .2);
+    /* height: 90%;
+    max-height: 555px; */
+    width: 90%;
+    max-width: 400px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    padding: 20px;
+    color: #fff;
+    transition: height .6s ease;
+    
+}
+
+.search-box{
+    position: relative;
+    width: 100%;
+    /* background-color: slateblue; */
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.search-box input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    outline: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 48px 0;
+}
+
+.search-box input::placeholder{
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.search-box i{
+    position: absolute;
+    left: 10px;
+    font-size: 28px;
+}
+
+.search-box button{
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    color: #fff;
+    padding: 0 40px 0 5px;
+    cursor: pointer;
+}
+
+.weather-box {
+    text-align: center;
+    margin: 25px 0 40px;
+    /* display: none; */
+}
+.day-date {
+    margin: 5px 0 0 17px;
+}
+
+.weather-box img{
+    width: 60%;
+}
+.weather-box .temperature{
+    position: relative;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 20px 0 6px -30px;
+}
+.weather-box .temperature span{
+    position: absolute;
+    font-size: 24px;
+    margin-left: 4px;
+}
+.weather-box .description{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: -3px;
+    margin-bottom: 5px;
+}
+.feels-like{
+    font-size: 18px;
+    margin-top: -5px
+}
+.city {
+    font-size: 22px;
+    font-weight: 500;
+}
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.details i {
+    font-size: 48px;
+    margin-right: 10px;
+}
+.details 
+    .humidity,
+    .wind {
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.details .text{
+    font-size: 14px;
+    font-weight: 500;
+}
+.details .padHumid{
+    padding-left: 20px;
+    /* justify-content: flex-start; */
+}
+.details .padWind{
+    padding-right: 20px;
+}
+
+.weather,
+.not-found {
+    display: none;
+}
+
+.not-found {
+    text-align: center;
+    margin: 50px 0 20px;
+
+}
+
+.not-found img{
+    width: 65%;
+}
+
+.not-found p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 12px;
+}
